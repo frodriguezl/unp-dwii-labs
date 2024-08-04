@@ -11,6 +11,7 @@ import { RegPersona3Component } from "./reg-persona3/reg-persona3.component";
 import { RegPersona4Component } from "./reg-persona4/reg-persona4.component";
 import { ListadoPersonasComponent } from "./listado-personas/listado-personas.component";
 import { FormsModule } from '@angular/forms';
+import { ListadoPersonasBindingComponent } from "./listado-personas-binding/listado-personas-binding.component";
 
 @NgModule({
   declarations: [	
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     RegPersona3Component,
     RegPersona4Component,
     ListadoPersonasComponent,
-    FormsModule
+    FormsModule,
+    ListadoPersonasBindingComponent
 ],
   providers: [],
   bootstrap: [AppComponent]

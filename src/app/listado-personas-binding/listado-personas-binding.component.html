@@ -1,0 +1,21 @@
+
+<!-- <div class="container">
+    <hr/>
+    <div class="col">
+        <app-formulario-persona-binding (personaCreada)="personaAgregada($event)"></app-formulario-persona-binding>
+    </div>
+    <hr/>
+    <app-persona-binding *ngFor="let persona of personas; let i = index" [persona]="persona" [indice]="i"></app-persona-binding>
+</div> -->
+
+
+<div class="box" id="heading">
+    <hr/>
+    <h1>Listado de Personas</h1>
+    <div class="box">
+        <app-persona-binding *ngFor="let persona of personas; let i = index" [persona]="persona" [indice]="i"></app-persona-binding>
+    </div>
+    <div class="box">
+        <app-formulario-persona-binding (personaCreada)="personaAgregada($event)"></app-formulario-persona-binding>
+    </div>
+</div>
